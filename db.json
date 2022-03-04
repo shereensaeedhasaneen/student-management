@@ -1,34 +1,9 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "student 1",
-      "email": "student1@gmail.com"
-    },
-    {
       "id": 2,
       "name": "student 2",
       "email": "student2@gmail.com"
-    },
-    {
-      "id": 3,
-      "name": "student 3",
-      "email": "student3@gmail.com"
-    },
-    {
-      "name": "kjh",
-      "email": "gh@kjj.ff",
-      "id": 4
-    },
-    {
-      "name": "dodo saeed",
-      "email": "dodo@dodo.com",
-      "id": 5
-    },
-    {
-      "name": "jhg",
-      "email": "jhg@vbh.kjhg",
-      "id": 6
     },
     {
       "name": "hgf",
@@ -36,14 +11,14 @@
       "id": 7
     },
     {
-      "name": "gf",
-      "email": "sd@gg.ff",
-      "id": 8
-    },
-    {
       "name": "kjh",
       "email": "g@d.j",
       "id": 9
+    },
+    {
+      "name": "ih",
+      "email": "jh@vb",
+      "id": 10
     }
   ],
   "comments": [
