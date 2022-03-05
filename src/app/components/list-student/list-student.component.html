@@ -14,7 +14,11 @@
       <td>{{item.id}}</td>
       <td>{{item.name}}</td>
       <td>{{item.email}}</td>
-      <td><button (click)="deleteStudent(item.id)">delete</button></td>
+      <td>
+        <button (click)="deleteStudent(item.id)">delete</button>
+        &nbsp;
+        <a routerLink="/edit-student/{{item.id}}">Edit</a>
+      </td>
     </tr>
   </tbody>
 </table>
