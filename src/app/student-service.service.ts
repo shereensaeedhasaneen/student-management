@@ -21,4 +21,12 @@ export class StudentServiceService {
   DeleteStudentData(id:number){
     return this.http.delete(`${this.url}/${id}`)
   }
+
+  GetStudentDataByID(id:number){
+    return this.http.get(`${this.url}/${id}`)
+  }
+
+  EditStudentData(data:any,id:number){
+    return this.http.put(`${this.url}/${id}`,data)
+  }
 }

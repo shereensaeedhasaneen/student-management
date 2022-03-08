@@ -10,9 +10,16 @@ export class ListStudentComponent implements OnInit {
 
   constructor( private student:StudentServiceService) { }
 
-  studentData:any={};
+  studentData:any=[];
+  dtOptions:DataTables.Settings={};
   ngOnInit(): void {
-    this.student.getAllStudent().subscribe(allStudent => {
+    this.dtOptions={
+      pagingType:'full_numbers',
+      pageLength:5,
+      lengthMenu:[5,10,15,50],
+      processing:true
+    }
+    this.student.getAllStudent().subscribe((allStudent :any) => {
       console.log(allStudent);
       this.studentData=allStudent
     });
