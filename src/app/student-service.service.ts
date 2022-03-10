@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -20,5 +21,10 @@ export class StudentServiceService {
 
   DeleteStudentData(id:number){
     return this.http.delete(`${this.url}/${id}`)
+  }
+
+  getDataForPagination():Observable<any>{
+    const base_url ="https://randomuser.me/api/?results=100";
+    return this.http.get<any>(base_url)
   }
 }

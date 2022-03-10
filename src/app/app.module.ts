@@ -10,7 +10,9 @@ import { LoginStudentComponent } from './components/login-student/login-student.
 import { RegistrationStudentComponent } from './components/registration-student/registration-student.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from '@angular/common/http';
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import {NgxPaginationModule} from 'ngx-pagination'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +20,16 @@ import {ReactiveFormsModule} from '@angular/forms'
     EditStudentComponent,
     ListStudentComponent,
     LoginStudentComponent,
-    RegistrationStudentComponent
+    RegistrationStudentComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

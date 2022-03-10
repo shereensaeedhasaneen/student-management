@@ -1,3 +1,4 @@
+import { PaginationComponent } from './components/pagination/pagination.component';
 import { LoginStudentComponent } from './components/login-student/login-student.component';
 import { EditStudentComponent } from './components/edit-student/edit-student.component';
 import { AddStudentComponent } from './components/add-student/add-student.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'list-student' , component:ListStudentComponent},
   {path:'login' , component:LoginStudentComponent},
   {path:'register' , component:RegistrationStudentComponent},
+  {path:'pagination' , component:PaginationComponent},
 
 ];
 
